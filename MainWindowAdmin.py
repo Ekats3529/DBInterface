@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QDialog, QCheckB
 import MainWindowStudent, MainWindowTeacher, main_connections, AuthorizationWindow
 
 from ShowTableWindow import ShowTableWindow, TableModel
+from AddRowWindow import AddRowWindow, DeleteRowWindow
 
 from PyQt5 import uic, QtWidgets, QtGui
 from PyQt5.QtGui import QStandardItemModel
@@ -81,6 +82,8 @@ class MainWindowAdmin(QMainWindow):
         self.set_comboBox_tables()
         self.comboBox.activated[str].connect(self.table)
         self.pushButton_shc.clicked.connect(self.show_schedule)
+        self.pushButton_2.clicked.connect(self.addrow)
+        self.pushButton_3.clicked.connect(self.delrow)
 
     def table(self, text):
         self.chosen_table = text
@@ -127,3 +130,14 @@ class MainWindowAdmin(QMainWindow):
         self.tableView.setModel(self.proxy_model)
         self.searchbar.textChanged.connect(self.proxy_model.setFilterFixedString)
         self.tableView.resizeColumnsToContents()
+
+    def addrow(self):
+        mainwindow = AddRowWindow(self.chosen_table)
+        mainwindow.show()
+        mainwindow.exec()
+
+    def delrow(self):
+        mainwindow = DeleteRowWindow(self.chosen_table)
+        mainwindow.show()
+        mainwindow.exec()
+

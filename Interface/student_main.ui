@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>295</height>
+    <width>806</width>
+    <height>307</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,21 +102,21 @@
    <widget class="QLabel" name="label_nosch">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>180</y>
-      <width>570</width>
-      <height>180</height>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>570</width>
-      <height>180</height>
+      <width>0</width>
+      <height>0</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>570</width>
+      <width>1000</width>
       <height>180</height>
      </size>
     </property>
@@ -152,19 +152,19 @@
      <rect>
       <x>570</x>
       <y>180</y>
-      <width>570</width>
-      <height>180</height>
+      <width>211</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>570</width>
-      <height>180</height>
+      <width>0</width>
+      <height>0</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>570</width>
+      <width>1000</width>
       <height>180</height>
      </size>
     </property>
@@ -183,7 +183,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>806</width>
      <height>26</height>
     </rect>
    </property>
